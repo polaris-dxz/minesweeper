@@ -76,10 +76,10 @@ export const AppleWebMeta: AppleWebApp = {
   ]
 };
 const title = {
-  default: "MineSweeper Game Online",
-  template: "%s | MineSweeper Game Online"
+  default: "MineSweeper",
+  template: "%s | MineSweeper"
 };
-const description = "windows 98/2000 classic minesweeper game online";
+const description = "windows 98/2000 classic minesweeper";
 export const viewportSetting: Viewport = {
   width: "device-width",
   initialScale: 1,

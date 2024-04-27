@@ -35,6 +35,9 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# PWA
+/public/sw*
+/public/workbox-*
 
 # others
 homework.md

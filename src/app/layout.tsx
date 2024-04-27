@@ -1,12 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-// import { Inter } from 'next/font/google'
 import ReduxProvider from "../redux/provider";
 // import "98.css";
 import { PWAMeta, viewportSetting } from "../config";
 // import GTag from "@/components/gtag";
 import { StrictMode } from "react";
-// const inter = Inter({ subsets: ['latin'] })
 
 export const viewport = viewportSetting;
 export const metadata: Metadata = {
@@ -14,12 +12,12 @@ export const metadata: Metadata = {
   keywords:
     "minesweeper, play minesweeper, game, minesweeper free, minesweeper game, classic minesweeper, minesweeper google, microsoft minesweeper, minesweeper mac, minesweeper windows, mine sweeper, how to play minesweeper",
   category: "game",
-  // verification: {
-  //   google: "MWrPIw9iMotX9pjUS-MiAj-CN58odQTTvdHtpWlxy-s"
-  // },
-  // alternates: {
-  //   canonical: "https://minesweeper-ai.vercel.app/"
-  // }
+  verification: {
+    google: ""
+  },
+  alternates: {
+    canonical: "https://minesweeper-ai.vercel.app/"
+  }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
