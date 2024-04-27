@@ -1,11 +1,9 @@
-import { useAppDispatch, useAppSelector } from "@/redux/hooks";
-import { updateArticle } from "@/redux/slice/user.data";
+// import { useAppDispatch, useAppSelector } from "@/redux/hooks";
+// import { updateArticle } from "@/redux/slice/user.data";
 import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
 
-// type Props = {
-// }
 type ItemProps = {
   selected?: boolean;
   name: string;
@@ -29,90 +27,18 @@ const MenuItem = ({ selected = false, icon, title, clickHandler }: ItemProps) =>
   );
 };
 const StartPanel = ({ closePanel }: { closePanel: () => void }) => {
-  const article = useAppSelector((store) => store.userData.article);
-  const dispatch = useAppDispatch();
+  // const article = useAppSelector((store) => store.userData.article);
+  // const dispatch = useAppDispatch();
   const arts = [
     {
-      selected: article == "how-to-play",
-      icon: "/win/help.png",
-      title: "How to play minesweeper",
+      selected: false,
+      icon: "/win/feedback.png",
+      title: "Feedback",
       clickHandler: () => {
-        dispatch(updateArticle("how-to-play"));
+        window.open('https://github.com/polaris-dxz/minesweeper/issues', '_blank');
         closePanel();
       }
     },
-    {
-      selected: article == "advance-patterns",
-      icon: "/win/channel.png",
-      title: "Advanced Patterns",
-      clickHandler: () => {
-        dispatch(updateArticle("advance-patterns"));
-        closePanel();
-      }
-    },
-    {
-      selected: article == "first-click",
-      icon: "/win/tip.png",
-      title: "First Click",
-      clickHandler: () => {
-        dispatch(updateArticle("first-click"));
-        closePanel();
-      }
-    },
-    {
-      selected: article == "guess",
-      icon: "/win/question.png",
-      title: "Guessing",
-      clickHandler: () => {
-        dispatch(updateArticle("guess"));
-        closePanel();
-      }
-    },
-    {
-      selected: article == "no-flag",
-      icon: "/win/agent.png",
-      title: "No Flags",
-      clickHandler: () => {
-        dispatch(updateArticle("no-flag"));
-        closePanel();
-      }
-    },
-    {
-      selected: article == "efficiency",
-      icon: "/win/keys.png",
-      title: "Efficiency",
-      clickHandler: () => {
-        dispatch(updateArticle("efficiency"));
-        closePanel();
-      }
-    },
-    {
-      selected: article == "how-to-install-pwa",
-      icon: "/win/ie.box.png",
-      title: "How to install PWA",
-      clickHandler: () => {
-        dispatch(updateArticle("how-to-install-pwa"));
-        closePanel();
-      }
-    },
-    {
-      selected: article == "more-tips",
-      icon: "/win/note.png",
-      title: "More Tips",
-      clickHandler: () => {
-        dispatch(updateArticle("more-tips"));
-        closePanel();
-      }
-    },
-    {
-      selected: article == "about",
-      icon: "/win/info.png",
-      title: "About",
-      clickHandler: () => {
-        dispatch(updateArticle("about"));
-        closePanel();
-      }
-    }
   ] as ItemProps[];
   return (
     <aside className="window max-w-[unset] w-52">
