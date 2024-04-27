@@ -1,26 +1,54 @@
 {
   "name": "minesweeper",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "",
+  "description": "💣💥 An old style minesweeper game built with React, Next.js, and Tailwind CSS.",
+  "keywords": [
+    "minesweeper",
+    "game",
+    "react",
+    "nextjs",
+    "tailwindcss",
+    "typescript"
+  ],
+  "private": false,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 4026",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "98.css": "^0.1.20",
+    "@reduxjs/toolkit": "^2.0.1",
+    "@uidotdev/usehooks": "^2.4.1",
+    "clsx": "^2.1.0",
+    "dayjs": "^1.11.10",
+    "file-saver": "^2.0.5",
+    "html-to-image": "^1.11.11",
+    "idb-keyval": "^6.2.1",
+    "next": "14.2.3",
     "react": "^18",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-hotkeys-hook": "^4.4.3",
+    "react-redux": "^9.0.4",
+    "react-share": "^5.0.3"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@mdx-js/loader": "^3.0.0",
+    "@mdx-js/react": "^3.0.0",
+    "@next/mdx": "^14.0.4",
+    "@svgr/webpack": "^8.1.0",
+    "@types/mdx": "^2.0.10",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "autoprefixer": "10.4.16",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "typescript": "^5"
   }
 }
