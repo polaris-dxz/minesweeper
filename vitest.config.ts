@@ -11,11 +11,12 @@ export default defineConfig({
       '**/node_modules/**',
       '**/__tests__/utils/**',
     ],
-    coverage: {
-      provider: 'v8',
-      reporter: ['text', 'json', 'html'], // 定义多种覆盖率报告格式
-      exclude: ['node_modules', '__tests__'], // 排除不需要覆盖的文件或目录
-    }
+    // "coverage": "vitest run --coverage"
+    // coverage: {
+    //   provider: 'v8',
+    //   reporter: ['text', 'json', 'html'], // 定义多种覆盖率报告格式
+    //   exclude: ['node_modules', '__tests__'], // 排除不需要覆盖的文件或目录
+    // }
   },
   resolve: {
     alias: {
