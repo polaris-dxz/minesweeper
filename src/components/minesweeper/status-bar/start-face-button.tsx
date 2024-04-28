@@ -34,6 +34,7 @@ const StartFaceButton = () => {
       boardNode.removeEventListener("mouseup", handleMouseUp);
       boardNode.removeEventListener("touchend", handleMouseUp);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (status == "loss" || status == "win") {
@@ -70,7 +71,7 @@ const StartFaceButton = () => {
         />
       )}
       <button
-        // onDoubleClick={handleDobuleClick}
+        // onDoubleClick={handleDoubleClick}
         ref={btnRef}
         onClick={handleClick}
         className={clsx(

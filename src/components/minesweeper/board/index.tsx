@@ -51,6 +51,7 @@ const Board = () => {
         randSeed: Math.random()
       })
     );
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [level]);
 
   const onRightClick = (e: React.MouseEvent, coordinate: Coordinate) => {

@@ -37,6 +37,7 @@ const Timer = () => {
       default:
         break;
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [minesweeper.status, elapsedTime]);
   return <CounterView count={elapsedTime} />;
 };

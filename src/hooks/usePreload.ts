@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { fillUserData } from "@/redux/slice/user.data";
 import { UserData } from "@/types";
